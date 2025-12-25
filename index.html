@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bano Qabil Sahiwal - Free IT Training</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="data:image/png;base64,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" alt="Bano Qabil Logo">
+        <div>
+          <h2>Bano Qabil</h2>
+          <span>Sahiwal</span>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-background">
+      <div class="hero-video">
+        <video autoplay muted loop>
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-man-working-on-his-computer-869-large.mp4" type="video/mp4">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Fallback">
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text fade-in-up">
+        <h1 class="hero-title">
+          Free <span class="highlight">IT Training</span> Program
+        </h1>
+        <p class="hero-subtitle">
+          Empowering Youth of Sahiwal with <strong>Modern IT Skills</strong> for a Digital Future
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="scrollToSection('apply')">Apply Now</button>
+          <button class="btn btn-secondary" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Floating Cards -->
+      <div class="hero-cards">
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <button class="skill-btn" onclick="window.location.href='web.html'">Web Development</button>
+        </div>
+        <div class="card">
+          <i class="fas fa-mobile-alt"></i>
+          <button class="skill-btn" onclick="window.location.href='App.html'">App Development</button>
+        </div>
+        <div class="card">
+          <i class="fas fa-chart-line"></i>
+          <button class="skill-btn" onclick="window.location.href='digital-marketing.html'">Digital Marketing</button>
+        </div>
+        <div class="card">
+          <i class="fas fa-paint-brush"></i>
+          <button class="skill-btn" onclick="window.location.href='graphic-design.html'">Graphic Design</button>
+        </div>
+      </div>
+
+      <!-- Scroll Down -->
+      <div class="scroll-down" onclick="scrollToSection('about')">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header fade-in-up">
+        <h2>About <span class="highlight">Bano Qabil</span></h2>
+        <p class="tagline">Transforming Lives Through Technology in Sahiwal</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Our Mission</h3>
+          <p>
+            Bano Qabil is a <strong>free IT training initiative</strong> launched to empower the youth of Sahiwal with
+            modern, industry-relevant skills. From web development to digital marketing, we provide
+            <em>hands-on training</em> that opens doors to freelancing, jobs, and entrepreneurship.
+          </p>
+
+          <ul class="about-features">
+            <li><i class="fas fa-check-circle"></i> 100% Free Courses</li>
+            <li><i class="fas fa-check-circle"></i> Expert Instructors</li>
+            <li><i class="fas fa-check-circle"></i> Industry Certificates</li>
+            <li><i class="fas fa-check-circle"></i> Job & Freelance Support</li>
+          </ul>
+
+          <button class="btn btn-primary" onclick="window.location.href='apply-form.html'">Join Now</button>
+        </div>
+
+        <div class="about-media">
+          <div class="media-card">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=60" alt="Students Learning">
+            <div class="play-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="about-stats">
+        <div class="stat">
+          <h4 data-target="2500">0</h4>
+          <p>Students Trained</p>
+        </div>
+        <div class="stat">
+          <h4 data-target="95">0</h4>
+          <p>Job Placement %</p>
+        </div>
+        <div class="stat">
+          <h4 data-target="50">0</h4>
+          <p>Expert Trainers</p>
+        </div>
+        <div class="stat">
+          <h4 data-target="10">0</h4>
+          <p>Free Courses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Address</strong><br>
+            <a href="https://maps.google.com/?q=Bano+Qabil+Sahiwal" target="_blank">
+              Al-Falah Plaza, 2nd Floor, Main College Road, Sahiwal
+            </a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <strong>Phone</strong><br>
+            <a href="tel:+923276036426">+92 3276036426</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:info@banoqabilsahiwal.com">info@banoqabilsahiwal.com</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <strong>Office Hours</strong><br>
+            Mon – Sat: 9:00 AM – 9:00 PM
+          </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-box">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.5854674767866!2d73.11176557453422!3d30.675388288403667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922b7003ac9c1d1%3A0xe3266f7f8b9c13a8!2sAl%20Khidmat%20Complex%20(Bano%20Qabil%20Sahiwal)!5e1!3m2!1sen!2s!4v1766673263461!5m2!1sen!2s" 
+            width="100%" 
+            height="300" 
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="name" placeholder="e.g. Ali Raza" required>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" id="email" placeholder="e.g. ali@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" id="phone" placeholder="03xx-xxxxxxx">
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea id="message" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+        <div id="formMsg" style="margin-top:15px;display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Bano Qabil Sahiwal</h3>
+          <p>Free IT training for youth – empowering careers in tech & design.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="app-development.html">App Development</a></li>
+            <li><a href="digital-marketing.html">Digital Marketing</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="apply-form.html">Apply Now</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="contact-list">
+            <li><i class="fas fa-map-marker-alt"></i>137 Fateh Sher Road, Fateh Sher Colony, Sahiwal</li>
+            <li><i class="fas fa-phone"></i> +92 300 123 4567</li>
+            <li><i class="fas fa-envelope"></i> info@banoqabilsahiwal.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 Bano Qabil Sahiwal. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Marketing – Bano Qabil Sahiwal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    :root{
+      --primary:#003366;
+      --accent:#ffcc00;
+      --grey:#f5f7fa;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+    body{background:var(--grey);color:#333;line-height:1.6;}
+    .container{max-width:1200px;margin:auto;padding:0 20px;}
+    .btn{background:var(--accent);color:var(--primary);padding:12px 30px;border:none;border-radius:5px;font-weight:700;cursor:pointer;transition:.3s;}
+    .btn:hover{background:#e6b800;}
+
+    /* ===== HERO ===== */
+    .hero{height:75vh;display:flex;align-items:center;background:linear-gradient(rgba(0,51,102,.8),rgba(0,51,102,.8)),url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1350&q=80') center/cover;color:#fff;}
+    .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+    .hero-text h1{font-size:48px;margin-bottom:20px;}
+    .hero-text .highlight{color:var(--accent);}
+    .hero-text p{font-size:20px;margin-bottom:30px;}
+    .hero-video{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,.3);}
+    .hero-video img{width:100%;display:block;}
+    .play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:70px;color:var(--accent);cursor:pointer;transition:transform .3s;}
+    .play-btn:hover{transform:translate(-50%,-50%) scale(1.1);}
+    /* modal video */
+    .video-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;align-items:center;justify-content:center;}
+    .video-modal video{max-width:900px;width:90%;border-radius:8px;}
+    .close-modal{position:absolute;top:20px;right:30px;font-size:36px;color:#fff;cursor:pointer;}
+
+    /* ===== SECTIONS ===== */
+    section{padding:80px 0;}
+    .section-title{text-align:center;font-size:36px;margin-bottom:40px;color:var(--primary);}
+    .section-title::after{content:'';display:block;width:60px;height:3px;background:var(--accent);margin:10px auto 0;}
+
+    /* ===== CURRICULUM ===== */
+    .curriculum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+    .module{background:#fff;border-left:4px solid var(--accent);padding:25px;border-radius:6px;box-shadow:0 5px 15px rgba(0,0,0,.05);}
+    .module h3{margin-bottom:10px;color:var(--primary);}
+    .module ul{list-style:none;padding-left:0;}
+    .module li{margin:6px 0;font-size:15px;}
+    .module li::before{content:'✓';color:var(--accent);margin-right:8px;font-weight:700;}
+
+    /* ===== INSTRUCTOR ===== */
+    .instructor{display:flex;gap:40px;align-items:center;background:#fff;padding:40px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);}
+    .instructor-img{width:220px;border-radius:50%;border:5px solid var(--accent);}
+    .instructor-info h3{font-size:28px;margin-bottom:10px;color:var(--primary);}
+    .instructor-info p{margin-bottom:5px;}
+    .social a{margin-right:10px;font-size:20px;color:var(--primary);transition:.3s;}
+    .social a:hover{color:var(--accent);}
+
+    /* ===== ENROLL CTA ===== */
+    .enroll-cta{text-align:center;background:var(--primary);color:#fff;padding:60px 20px;border-radius:12px;}
+    .enroll-cta h2{font-size:36px;margin-bottom:15px;}
+    .enroll-cta p{font-size:20px;margin-bottom:30px;}
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width:768px){
+      .hero-content{grid-template-columns:1fr;text-align:center;}
+      .instructor{flex-direction:column;text-align:center;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Master <span class="highlight">Digital Marketing</span></h1>
+      <p>Learn SEO, Google Ads, Facebook Ads, Content Marketing & Analytics. Become a certified digital marketer and start earning online.</p>
+      <button class="btn" onclick="window.location.href='apply form.html'">Enroll Now</button>
+    </div>
+    <div class="hero-video">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="DM Intro">
+      <i class="fas fa-play-circle play-btn" title="Play Intro"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO MODAL ===== -->
+<div class="video-modal" id="videoModal">
+  <span class="close-modal">&times;</span>
+  <video controls>
+    <source src="dm-intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- ===== CURRICULUM ===== -->
+<section>
+  <h2 class="section-title">What You’ll Learn</h2>
+  <div class="container curriculum-grid">
+    <div class="module">
+      <h3>Module 1: SEO & Blogging</h3>
+      <ul>
+        <li>Keyword Research</li>
+        <li>On-Page SEO</li>
+        <li>Link Building</li>
+        <li>Google Search Console</li>
+      </ul>
+    </div>
+    <div class="module">
+      <h3>Module 2: Google Ads</h3>
+      <ul>
+        <li>Search Campaigns</li>
+        <li>Display & YouTube Ads</li>
+        <li>Conversion Tracking</li>
+        <li>Quality Score Optimization</li>
+      </ul>
+    </div>
+    <div class="module">
+      <h3>Module 3: Social Media</h3>
+      <ul>
+        <li>Facebook & Instagram Ads</li>
+        <li>LinkedIn & Twitter Basics</li>
+        <li>Content Calendar</li>
+        <li>Community Management</li>
+      </ul>
+    </div>
+    <div class="module">
+      <h3>Module 4: Analytics & ROI</h3>
+      <ul>
+        <li>Google Analytics 4</li>
+        <li>Data Studio Dashboards</li>
+        <li>A/B Testing</li>
+        <li>Client Reporting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSTRUCTOR ===== -->
+<section style="background:#fff;">
+  <h2 class="section-title">Meet Your Instructor</h2>
+  <div class="container instructor">
+    <img src="#" alt="Instructor" class="instructor-img">
+    <div class="instructor-info">
+      <h3>Ayesha Khan</h3>
+      <p>Digital Marketing Strategist | 7+ Years Experience</p>
+      <p>Managed ₹2Cr+ ad spend, worked with 50+ brands.</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENROLL CTA ===== -->
+<section>
+  <div class="container">
+    <div class="enroll-cta">
+      <h2>Drive Traffic, Leads & Sales Like a Pro</h2>
+      <p>Batch starts next week – limited seats!</p>
+      <button class="btn" onclick="window.location.href='apply form.html'">Enroll Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO MODAL JS ===== -->
+<script>
+  const modal = document.getElementById('videoModal');
+  const playBtn = document.querySelector('.play-btn');
+  const closeModal = document.querySelector('.close-modal');
+  const video = modal.querySelector('video');
+
+  playBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+    video.play();
+  });
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    video.pause();
+    video.currentTime = 0;
+  });
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+</script>
+
+</body>
+</html>
